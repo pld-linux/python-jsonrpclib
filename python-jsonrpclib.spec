@@ -2,7 +2,7 @@
 %bcond_with	doc	# don't build doc
 %bcond_with	tests	# do not perform "make test"
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 # NOTES:
 # - 'module' should match the Python import path (first component?)
@@ -11,7 +11,7 @@
 %define		module		jsonrpclib
 %define		egg_name	jsonrpclib
 %define		pypi_name	jsonrpclib
-Summary:	A Python JSON-RPC over HTTP that mirrors xmlrpclib syntax.
+Summary:	A Python JSON-RPC over HTTP that mirrors xmlrpclib syntax
 # Summary(pl.UTF-8):	-
 Name:		python-%{pypi_name}
 Version:	0.1.7
